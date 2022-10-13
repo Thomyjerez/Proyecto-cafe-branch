@@ -1,7 +1,23 @@
+import { useEffect, useState } from "react";
 import { Button,  Table } from "react-bootstrap";
+import { consultarAPI } from "../helpers/queries";
 import ItemProducto from './producto/ItemProducto'
 
 const Administrador = () => {
+
+    const [productos, setProductos] = useState([])
+
+// consultar la api de queries.js
+    useEffect (()=>{
+// para ejecutar la funcion que trabaja con una promesa, 
+// cuando termine la promesa y venga la respuesta, mostrar la respuesta
+
+        consultarAPI().then((respuesta)=>{
+            console.log(respuesta)
+            setProductos(respuesta)
+        })
+    },[])
+
     return (
         <section className="container mainSection">
             <div className="d-flex justify-content-between align-items-center mt-5">
@@ -21,8 +37,11 @@ const Administrador = () => {
                     </tr>
                 </thead>
                 <tbody>
+                    {
+                        productos.map((producto)=><ItemProducto key={producto.id} producto={producto}></ItemProducto>)
+                    }
 
-                <ItemProducto></ItemProducto>
+                
                 </tbody>
             </Table>
         </section>
