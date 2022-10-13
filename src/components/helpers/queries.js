@@ -2,7 +2,12 @@
 
 const URL = 'http://localhost:3004/productos';
 
-// peticion get que trae todos los productos
+// peticion GET que trae  una lista de productos o un producto
+// tipos de peticiones
+// peticion para crear un prod dentro de la api se llama POST
+// peticion DELETE, peticion para borrar
+// peticion para modificar un producto, PUT
+
 
 export const consultarAPI = async()=> {
     try{
