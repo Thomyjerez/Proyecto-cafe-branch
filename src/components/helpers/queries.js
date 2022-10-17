@@ -53,3 +53,19 @@ export const borrarProductoAPI = async(id)=> {
         console.log(error)
     }
 }
+
+// para editar el producto/obtener el producto
+
+export const obtenerProductoAPI = async(id)=> {
+    try{
+        // fetch peticion
+        // await esperar
+         const respuesta = await fetch(URL+'/'+id);
+         const productoBuscado = await respuesta.json()
+        //  console.log(listaProductos) 
+        return productoBuscado;       
+    }catch(error){
+        console.log(error)
+    }
+}
+

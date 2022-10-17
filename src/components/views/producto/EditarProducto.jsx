@@ -2,6 +2,17 @@ import React from "react";
 import {Form, Button} from 'react-bootstrap'
 
 const EditarProducto = () => {
+
+  // useEffect(() => {
+  //   first
+  
+  //   return () => {
+  //     second
+  //   }
+  // }, [third])
+  
+
+
   return (
     <section className="container mainSection">
       <h1 className="display-4 mt-5">Editar producto</h1>
