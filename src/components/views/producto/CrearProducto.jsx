@@ -14,8 +14,11 @@ const CrearProducto = () => {
   );
 
   const onSubmit = (datos)=>{
+    // los datos ya estan validados
     console.log(datos)
     console.log('desde submit')
+    // enviar los datos a la API
+
   } 
 
 
