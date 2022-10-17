@@ -19,8 +19,8 @@ function App() {
         <Route exac path='/' element={<Home></Home>}></Route>
         <Route exac path='/administrador' element={<Administrador></Administrador>}></Route>
         <Route exac path='*' element={<Error></Error>}></Route>
-        <Route exact path='/administar/crear' element={<CrearProducto></CrearProducto>}></Route>
-        <Route exact path='/administar/editar/:id' element={<EditarProducto></EditarProducto>}></Route>
+        <Route exact path='/administrar/crear' element={<CrearProducto></CrearProducto>}></Route>
+        <Route exact path='/administrar/editar/:id' element={<EditarProducto></EditarProducto>}></Route>
         <Route exact path='/detalle-producto' element={<DetalleProducto></DetalleProducto>}></Route>
         <Route exact path='/login' element={<Login></Login>}></Route>
         <Route exact path='/registro' element={<Registro></Registro>}></Route>
