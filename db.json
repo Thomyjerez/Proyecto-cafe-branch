@@ -20,20 +20,6 @@
       "categoria": "bebida, fria",
       "imagen": "https://images.pexels.com/photos/2575835/pexels-photo-2575835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "id": 3
-    },
-    {
-      "nombreProducto": "te de prueba",
-      "precio": 300,
-      "categoria": "bebida, caliente",
-      "imagen": "https://images.pexels.com/photos/2575835/pexels-photo-2575835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "id": 4
-    },
-    {
-      "nombreProducto": "te helado",
-      "precio": "112",
-      "imagen": "https://resizer.glanacion.com/resizer/xnMINFb5DVy7J8dazoRYKukfMrU=/1200x800/smart/filters:format(webp):quality(80)/cloud",
-      "categoria": "bebida fria",
-      "id": 5
     }
   ]
 }
