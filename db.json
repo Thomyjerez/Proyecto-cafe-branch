@@ -34,20 +34,6 @@
       "imagen": "https://resizer.glanacion.com/resizer/xnMINFb5DVy7J8dazoRYKukfMrU=/1200x800/smart/filters:format(webp):quality(80)/cloud",
       "categoria": "bebida fria",
       "id": 5
-    },
-    {
-      "nombreProducto": "cafe batido",
-      "precio": "250",
-      "imagen": "https://resizer.glanacion.com/resizer/xnMINFb5DVy7J8dazoRYKukfMrU=/1200x800/smart/filters:format(webp):quality(80)/cloud",
-      "categoria": "bebida caliente",
-      "id": 6
-    },
-    {
-      "nombreProducto": "factura",
-      "precio": "100",
-      "imagen": "https://www.sensacine.com/peliculas/pelicula-53751/trailer-18817914/",
-      "categoria": "dulce",
-      "id": 7
     }
   ]
 }
