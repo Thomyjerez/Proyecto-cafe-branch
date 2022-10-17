@@ -7,7 +7,9 @@ import EditarProducto from './components/views/producto/EditarProducto'
 import DetalleProducto from './components/views/DetalleProducto'
 import Menu from './components/common/Menu'
 import 'bootstrap/dist/css/bootstrap.min.css'
-
+import Login from './components/views/Login'
+import Registro from './components/views/Registro';
+import Footer from './components/common/Footer'
 
 function App() {
   return (
@@ -20,8 +22,10 @@ function App() {
         <Route exact path='/administar/crear' element={<CrearProducto></CrearProducto>}></Route>
         <Route exact path='/administar/editar/:id' element={<EditarProducto></EditarProducto>}></Route>
         <Route exact path='/detalle-producto' element={<DetalleProducto></DetalleProducto>}></Route>
-        
+        <Route exact path='/login' element={<Login></Login>}></Route>
+        <Route exact path='/registro' element={<Registro></Registro>}></Route>
       </Routes>
+      <Footer></Footer>
     </BrowserRouter>
   );
 }
