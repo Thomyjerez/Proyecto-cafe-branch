@@ -1,10 +1,10 @@
 {
   "productos": [
     {
-      "nombreProducto": "cafe",
-      "precio": 300,
-      "categoria": "bebida, caliente",
-      "imagen": "https://images.pexels.com/photos/2575835/pexels-photo-2575835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "nombreProducto": "Cafe",
+      "precio": "200",
+      "imagen": "https://www.clarin.com/img/2022/08/28/messi-no-lo-puede-creer___liNtUgoxA_340x340__1.jpg",
+      "categoria": "bebida caliente",
       "id": 1
     },
     {
@@ -15,11 +15,18 @@
       "id": 2
     },
     {
-      "nombreProducto": "licuado",
-      "precio": 350,
-      "categoria": "bebida, fria",
+      "nombreProducto": "Licuado de durazo",
+      "precio": "400",
       "imagen": "https://images.pexels.com/photos/2575835/pexels-photo-2575835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "bebida fria",
       "id": 3
+    },
+    {
+      "nombreProducto": "te de prueba",
+      "precio": 300,
+      "categoria": "bebida, caliente",
+      "imagen": "https://images.pexels.com/photos/2575835/pexels-photo-2575835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "id": 4
     }
   ]
 }
