@@ -1,20 +1,38 @@
+import { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import CardProducto from './producto/CardProducto'
+import { consultarAPI } from "../helpers/queries";
 
-const Home = () => {
+const Inicio = () => {
+
+    const [productos, setProductos] = useState([])
+  
+  
+    useEffect(()=>{
+  
+      // opcion 1
+      consultarAPI().then((respuesta)=>{
+        console.log(respuesta)
+        setProductos(respuesta)
+      })
+    },[])
+  
     return (
-        <Container className="my-5 mainSection">
-            <h1 className="display-3 text-center">Bienvenidos</h1>
-            <hr />
-            <Row xs={1} md={4} className='g-4'>
-                <CardProducto></CardProducto>
-            </Row>
-        </Container>
+      <Container className="my-5 mainSection">
+        <h1 className="display-3 text-center">Bienvenidos</h1>
+        <hr />
+        <Row xs={1} md={4} className="g-4">
+          {/* aqui van las columnas */}
+          {
+            productos.map((producto)=>  <CardProducto key={producto._id} producto={producto}></CardProducto>)
+          }
+         
+        </Row>
+      </Container>
     );
-};
-
-export default Home;
-
+  };
+  
+  export default Inicio;
 
 
 
