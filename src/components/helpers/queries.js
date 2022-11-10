@@ -2,7 +2,8 @@
 
 // const URL = 'http://localhost:3004/productos'; json-server
 
-const URL = 'http://localhost:4000/apicafe/productos'
+const URL = process.env.REACT_APP_API_CAFE;
+console.log(URL)
 
 // peticion GET que trae  una lista de productos o un producto
 // tipos de peticiones
